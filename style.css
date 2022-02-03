@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+}
+
+header {
+    height: 100px;
+    background-color: #282828;
+}
+
+.container-grid {
+    background-color: #282828;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    background-color: #282828;
+}
+
+.posicionamento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.link-menu-barras {
+    width: 30px;
+    display: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: none;
+}
+
+.menu {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 426px;
+    background-image: url(../img/destaques.png);
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    
+    .link-menu-barras{
+       display: inline-block;
+    }
+
+}
+ 
+@media screen and (max-width: 600px) {
+    header{
+        background-color: rgb(28, 28, 28);
+    } 
+    
+}
+
+
+
+/*
+
+
+@media screen and (max-width: 600px) {
+    
+
+/* As duas formas de linkar a classificação
+são: .menunav a e .menunav
+Essa linha background-size: cover; na seção Banner
+está ampliando a imagem, a ser resolvido.

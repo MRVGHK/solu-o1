@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Home - Game Mania</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head> 
+<body>
+    <header>
+        <div class="container-grid posicionamento-header">
+            <a href="index.html"> <img class="logo" src="img/logo game mania 1.jpg" alt="Logo da aplicação Game Mania"> </a>
+            <nav id="menu" class="menu"> 
+                <a href="http://google.com">Categorias</a>
+                <a href="http://google.com">Sobre Nós</a>
+                <a href="http://google.com">Fale Conosco</a>
+                <a href="http://google.com">Login/Registro</a>
+            </nav>
+            <a href="#" class="link-menu-barras" onclick="mostrarMenu()"> <img src="img/menu-symbol-svgrepo-com.svg" alt="Ícone do Menu de Barras"></a> 
+        </div>
+    </header>
+    
+     <script>
+        let menu = document.getElementById("menu"); 
+        
+        function mostrarMenu() {
+            console.log("Executou")
+
+            if (menu.style.display == "none") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none"            }
+        }
+    </script>
+
+</body>
+</html>
